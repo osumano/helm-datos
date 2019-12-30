@@ -37,10 +37,6 @@ securityContext: {}
 appEnv: devi
 databaseUrl: local
 
-postInstallJob:
-  image: osumano/datos:jenkins-DATOS-CI-20
-  run: true
-  script: python /app/datos/datos/db_init.py
 
 service:
   type: ClusterIP
